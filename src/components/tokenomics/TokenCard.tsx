@@ -5,7 +5,7 @@ interface ItemProps {
 
 const TokenCard: React.FC<ItemProps> = ({ tokenName, description }) => {
   return (
-    <div className="print3r-card flex-col mx-4 items-start">
+    <div className="print3r-card flex-col mx-4 items-start relative">
       <h3 className="inter text-white text-base mb-4">
         <span className="text-p3-orange">{tokenName}</span> Token
       </h3>

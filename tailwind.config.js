@@ -19,20 +19,6 @@ module.exports = {
         'p3-grey': '#181C23',
         'divider': '#34384C',
       },
-      maxWidth: {
-        '1/3': '35%',
-        '1/5': '20%',
-        '1/4': '25%',
-        '1/2': '50%', 
-        '2/3': '65%',
-        '4/5': '80%',
-      },
-      minWidth: {
-        '55%': '55%',
-        '1/5': '20%',
-        '1/2': '50%',
-        '1/3': '33%',
-      },
       fontFamily: {
         'nunito': ["Nunito", "sans-serif"],
         'poppins': ["Poppins", "sans-serif"],

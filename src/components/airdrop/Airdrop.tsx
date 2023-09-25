@@ -12,13 +12,13 @@ const Airdrop = () => {
         <AiOutlineArrowDown className="text-white text-lg ml-2" />
       </div>
       <img src="src/assets/brrr-banner.png" />
-      <div className="min-w-full bg-transparent pt-10 px-6 sm:p-24 flex flex-col lg:flex-row justify-between items-center">
-        <div className="lg:max-w-1/3">
-          <h1 className="text-white text-5xl font-semibold font-inter">
+      <div className="min-w-full bg-transparent pt-10 px-6 sm:p-24 flex flex-col-reverse lg:flex-row justify-between items-center">
+        <div className="flex flex-col lg:max-w-[35%] items-center lg:items-start">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-semibold font-inter text-center lg:text-start">
             Trade, Refer & Compete! PRINT AIRDROP{" "}
             <span className="text-p3-orange">SZN 1!</span>
           </h1>
-          <p className="text-white font-inter text-lg font-normal my-6 max-w-4/5 leading-7">
+          <p className="text-white font-inter text-sm md:text-base lg:text-lg font-normal my-6 max-w-[80%] leading-7 text-center lg:text-start">
             As you trade, hit milestones and open lootboxes on PRINT3R you’ll
             earn XP which will allow you to participate in our first seasonal
             PRINT airdrop!

@@ -22,7 +22,7 @@ const Differences = () => {
   return (
     <div className="w-100 p-6 sm:p-24 bg-transparent">
       <div className="flex flex-col items-center">
-        <h2 className="text-white text-4xl font-inter font-semibold">
+        <h2 className="text-center text-white text-4xl font-inter font-semibold">
           What sets <span className="text-p3-orange">Print3r apart?</span>
         </h2>
         <p className="text-p3-para font-poppins text-base text-center my-4 md:max-w-[45%]">
@@ -37,7 +37,8 @@ const Differences = () => {
             src="src/assets/difference-bg.png"
           ></img>
         </div>
-        <div className=" flex flex-col">
+        <div className="flex flex-col items-center">
+          <img className="xl:hidden" src="src/assets/difference-img.png" />
           {cards.map((card) => (
             <DCard title={card.title} description={card.description} />
           ))}

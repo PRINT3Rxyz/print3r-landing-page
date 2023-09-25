@@ -32,7 +32,7 @@ const UnreleasedCard: React.FC<UnreleasedCardProps> = ({
         </div>
       </div>
       <img
-        className="absolute object-fill left-0"
+        className="absolute object-fill left-0 w-full h-full"
         src="src/assets/card-mask.png"
       ></img>
     </div>

@@ -12,7 +12,7 @@ const StatCard: React.FC<ItemProps> = ({ title, value, icon }) => {
       </div>
       <div className="flex flex-col items-start">
         <p className="text-p3-head-text text-base inter">{title}</p>
-        <p className="text-white text-xl inter">${value.toLocaleString()}.??</p>
+        <p className="text-white text-xl inter">${value.toLocaleString()}</p>
       </div>
     </div>
   );

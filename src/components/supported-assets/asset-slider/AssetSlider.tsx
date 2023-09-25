@@ -51,10 +51,10 @@ const AssetSlider: React.FC<AssetSliderProps> = ({ cryptoData }) => {
     }) ?? [];
 
   return (
-    <>
+    <div className="flex flex-col pb-24">
       <div
         ref={containerRef}
-        className="my-7 flex flex-row items-end justify-between relative overflow-hidden"
+        className="min-w-full bg-transparent px-6 flex flex-row items-start overflow-x-auto touch-auto cursor-grab"
       >
         {assets.map((asset, index) => (
           <AssetCard key={index} {...asset} />
@@ -65,8 +65,10 @@ const AssetSlider: React.FC<AssetSliderProps> = ({ cryptoData }) => {
         />
         <UnreleasedCard tokenName="BRRR" imagePath="src/assets/brrr-logo.png" />
       </div>
-      <SliderButtons scroll={scroll} />
-    </>
+      <div className="flex w-screen items-center justify-center">
+        <SliderButtons scroll={scroll} />
+      </div>
+    </div>
   );
 };
 

@@ -16,8 +16,8 @@ const tokens = [
 const Tokens = () => {
   return (
     <div className="w-100 p-6 sm:pb-6 sm:px-24 bg-transparent">
-      <div className="flex flex-col items-center">
-        <h2 className="text-white text-4xl font-inter font-semibold">
+      <div className="flex flex-col items-center pb-6">
+        <h2 className="text-center text-white text-4xl font-inter font-semibold">
           Tokens Powering <span className="text-p3-orange">PRINT3R</span>
         </h2>
         <p className="text-p3-para font-poppins text-base text-center my-4 xl:max-w-[35%]">
@@ -25,20 +25,32 @@ const Tokens = () => {
           designed with long-term community fulfilment in mind.
         </p>
       </div>
-      <div className="grid lg:grid-cols-3 grid-cols-1 max-w-max my-12 items-center justify-center gap-6">
+      <div className="grid lg:grid-cols-3 grid-cols-1 max-w-max my-12 items-center justify-center gap-6 relative">
+        <img
+          className="absolute max-w-[50%] lg:hidden left-[25%] top-[-18%] sm:top-[-30%]"
+          src="src/assets/coin-bag.png"
+        />
         <TokenCard
           tokenName={tokens[0].tokenName}
           description={tokens[0].description}
         />
+
         <div className="flex items-center justify-center">
-          <img className="max-w-[300px]" src="src/assets/coin-img.png" />
+          <img
+            className="hidden lg:block max-w-[300px]"
+            src="src/assets/coin-img.png"
+          />
         </div>
+        <img
+          className="absolute max-w-[50%] lg:hidden left-[25%] top-[45%]"
+          src="src/assets/coin-stack.png"
+        />
         <TokenCard
           tokenName={tokens[1].tokenName}
           description={tokens[1].description}
         />
       </div>
-      <p className="text-white underline text-center font-poppins">
+      <p className="hidden sm:block text-white underline text-center font-poppins">
         More information on PRINT3R tokenomics can be found in our docs.
       </p>
     </div>

@@ -34,15 +34,18 @@ const Pricing = () => {
     fetchPrices();
   }, []);
   return (
-    <div className="bg-transparent py-24">
-      <div className="flex flex-row items-center justify-center">
-        <h2 className="italic text-white font-semibold font-inter text-lg text-center mr-2">
-          Supported <span className="text-p3-orange">Assets</span>
-        </h2>
-        <AiOutlineArrowDown className="text-white text-lg ml-2" />
+    <>
+      <div className="bg-transparent py-6 md:py-24">
+        <div className="flex flex-row items-center justify-center">
+          <h2 className="italic text-white font-semibold font-inter text-lg text-center mr-2">
+            Supported <span className="text-p3-orange">Assets</span>
+          </h2>
+          <AiOutlineArrowDown className="text-white text-lg ml-2" />
+        </div>
       </div>
+
       <AssetSlider cryptoData={data} />
-    </div>
+    </>
   );
 };
 
